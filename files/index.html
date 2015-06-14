@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenkins Configuration</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-8 columns">
+        <h1>Jenkins Configuration</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-8 medium-8 columns">    
+        <form action="config" method="post">
+          <div class="row">
+            <div class="large-8 columns">
+              <label>Jenkins URL</label>
+              <input type="text" placeholder="URL" name="url"/>
+            </div>
+            <div class="large-8 columns">
+              <label>API Token</label>
+              <input type="text" placeholder="token" name="token" />
+            </div>
+            <div class="large-8 columns">
+              <input type="submit" class="button" value="Save" />          
+            </div>
+          </div>
+        </form>
+      </div>   
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

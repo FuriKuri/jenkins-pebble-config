@@ -1,0 +1,22 @@
+{
+  "name": "jenkins-pebble-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuriKuri/jenkins-pebble-config.git"
+  },
+  "author": "Theo Pack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FuriKuri/jenkins-pebble-config/issues"
+  },
+  "homepage": "https://github.com/FuriKuri/jenkins-pebble-config#readme",
+  "dependencies": {
+    "hapi": "^8.6.1"
+  }
+}
