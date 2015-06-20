@@ -11,9 +11,15 @@
     function finish() {
       console.log('Success');
       var url = $( "#input-url" ).val();
+      var user = $( "#input-user" ).val();
+      var token = $( "#input-token" ).val();
+      var auth = null;
+      if (user && token) {
+        auth = Base64.encode(user + ':' + token);
+      }
       var data = {
-        url: $( "#input-url" ).val(),
-        auth: Base64.encode($( "#input-user" ).val() + ':' + $( "#input-token" ).val())
+        url: url,
+        auth: auth
       };
       console.log(data);
       location.href = 'pebblejs://close#' + JSON.stringify(data);
